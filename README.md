@@ -51,7 +51,7 @@ The chatbot's workflow is based on the Retrieval-Augmented Generation (RAG) para
 
 <li>Flask: A micro-framework used to build the web server and handle API requests.</li><br>
 
-<li>Ollama: A powerful tool for running large language models locally (medllama2 in this case).</li><br>
+<li><a href="https://ollama.com/download">Ollama</a>: A powerful tool for running large language models locally (medllama2 in this case).</li><br>
 
 <li>ChromaDB: A lightweight vector database used for storing and retrieving medical knowledge.</li><br>
 
