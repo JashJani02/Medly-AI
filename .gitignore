@@ -1,0 +1,12 @@
+# Python-specific
+__pycache__/
+*.pyc
+.venv/
+
+# Database files
+chroma_db/
+*.sqlite3
+
+# Operating System files
+.DS_Store
+*.env
