@@ -10,3 +10,9 @@ chroma_db/
 # Operating System files
 .DS_Store
 *.env
+
+# Media files
+uploads/
+static/audio/
+
+backend/1.py

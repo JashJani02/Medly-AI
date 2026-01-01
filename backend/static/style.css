@@ -1,21 +1,27 @@
 body {
   font-family: Arial, sans-serif;
   background: #f5f7fa;
+  margin: 0;
+  padding: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .chat-container {
   background: white;
-  width: 500px;
-  height: 600px;
+  width: 600px;
+  height: 90vh;
   border-radius: 10px;
   box-shadow: 0 0 10px #aaa;
   display: flex;
   flex-direction: column;
   padding: 15px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 #chat-box {
@@ -25,14 +31,16 @@ body {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  background: #fff;
 }
 
 .input-container {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
-input {
+input[type="text"], #user-input {
   flex: 1;
   padding: 8px;
   border-radius: 5px;
@@ -50,4 +58,27 @@ button {
 
 button:hover {
   background: #005fa3;
+}
+
+button:action {
+  background: #004080;
+}
+
+/* Paperclip attach button */
+.attach-btn {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px;
+  user-select: none;
+}
+
+.model-select {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.model-select select {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
