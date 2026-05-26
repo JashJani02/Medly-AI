@@ -2,17 +2,15 @@
 __pycache__/
 *.pyc
 .venv/
-
-# Database files
+.env
+static/audio
 chroma_db/
 *.sqlite3
 
-# Operating System files
 .DS_Store
 *.env
-
-# Media files
 uploads/
-static/audio/
-
-backend/1.py
+utils/__pycache__
+backend/__pycache__
+__pycache__/
+structure.txt
