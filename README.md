@@ -41,8 +41,21 @@ The chatbot's workflow is based on the Retrieval-Augmented Generation (RAG) para
 </ol>
 
 ### Workflow Flowchart
+```mermaid
+graph TD
+    UI_Input[User Input] --> App[app.py]
+    App --> Rag[rag.py]
+    App --> UI[User Interface]
+    Rag --> ST[SentenceTransformer]
+    Rag --> Augment[Prompt Augmentation]
+    ST --> Chroma[ChromaDB Retrieval]
+    Chroma --> Context[Context]
+    Context --> Augment
+    Augment --> Ollama[Ollama API]
+    Ollama --> Result[Generated Response]
+    Result --> App
 
-<image src="rag_response_flow.png" width="220" height="480">
+```
 
 ## 🛠️ Dev Stack & Tools
 
